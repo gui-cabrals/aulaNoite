@@ -1,0 +1,124 @@
+// <<<<<<<<<<<<<<<<<<<< EXERCÍCIOS DE REVISÃO >>>>>>>>>>>>>>>>>>>>
+
+// EXERCÍCIO 1: 
+
+/*
+let anoDeNascimento = 1995
+let anoAtual = 2023
+
+let idade = anoAtual - anoDeNascimento
+
+console.log(idade)
+*/
+
+
+// EXERCÍCIO 2: 
+
+/*
+let numero1 = 10
+let numero2 = 20
+let soma = numero1 + numero2
+let subtracao = numero1 - numero2
+let multiplicacao = numero1 * numero2
+let divisao = numero1 / numero2
+let modulo = numero1 % numero2
+
+console.log("A soma dos números 10 e 20, é: ", soma)
+console.log("A subtração dos números 10 e 20, é: ", subtracao)
+console.log("A multiplicação dos números 10 e 20, é: ", multiplicacao)
+console.log("A divisão dos números 10 e 20, é: ", divisao)
+console.log("O resto da divisão entre os números 10 e 20, é: ", modulo)
+*/
+
+// EXERCÍCIO 3: 
+/*
+let numero1 = 10
+let numero2 = 20
+
+console.log("10 é igual a 20?", numero1 === numero2)
+console.log("10 é diferente de 20?", numero1 !== numero2)
+console.log("10 é maior que 20?", numero1 > numero2)
+console.log("10 é maior ou igual a 20?", numero1 >= numero2)
+console.log("10 é menor que 20?", numero1 < numero2)
+console.log("10 é menor ou igual a 20?", numero1 <= numero2)
+*/
+
+//EXERCÍCIO 4:
+/*
+let temIdadeParaDirigir = true
+let temCarteiraDeMotorista = true
+let temCarroProprio = true
+
+console.log(temIdadeParaDirigir && temCarteiraDeMotorista)
+console.log(temCarroProprio || temCarteiraDeMotorista)
+console.log(!temIdadeParaDirigir || !temCarteiraDeMotorista) 
+*/
+
+//EXERCÍCIO 5: 
+/*
+let nomes = [" Guilherme ", " Jonathan ", " Gustavo "]
+
+console.log(nomes[0].toLowerCase())
+console.log(nomes[1].toLowerCase())
+console.log(nomes[2].toLowerCase())
+console.log(nomes[0].toUpperCase())
+console.log(nomes[1].toUpperCase())
+console.log(nomes[2].toUpperCase())
+console.log(nomes[0].trim())
+console.log(nomes[1].trim())
+console.log(nomes[2].trim())
+console.log(nomes[0].includes("a"))
+console.log(nomes[1].includes("a"))
+console.log(nomes[2].includes("a"))
+console.log(nomes[0].replaceAll("a", "#"))
+console.log(nomes[1].replaceAll("a", "#"))
+console.log(nomes[2].replaceAll("a", "#"))
+*/
+
+//EXERCÍCIO 6: 
+/*
+let nome = "Guilherme"
+let idade = 28
+let cidade = "São Leopoldo"
+
+let mensagem = `Olá, meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.`
+
+console.log(mensagem)
+*/
+
+//EXERCÍCIO 7: 
+/*
+let aluno = {
+    nome: "Guilherme",
+    idade: 28,
+    curso: "Javascript",
+}
+
+console.log(aluno)
+*/
+
+// PARTE 2
+/*
+let notas = []
+
+notas = [7.8, 8.2, 6.66]
+
+let media = (notas[0]+notas[1]+notas[2]) /3
+
+console.log(media)
+*/
+
+// PARTE 3
+
+let aluno = {
+    nome: "Guilherme",
+    idade: 28,
+    curso: "Javascript",
+    endereco: {
+        paisOndeMora: "Brasil",
+        anoNaEscola: "Concluiu",
+        cidade: "São Leopoldo"
+    }
+}
+
+console.log(aluno)

@@ -1,0 +1,76 @@
+Exercícios de interpretação de código
+
+1- 
+	const bool1 = true //variável booleana com valor "verdadeiro" ou "1"
+	const bool2 = false //variável booleana com valor "falso" ou "0" 
+	const bool3 = !bool2 //negado da variável bool2(false), apresentando um valor de saída true.
+
+
+	let resultado = bool1 && bool3 
+	console.log("a. ", resultado) // imprime true. bool1 && bool3 ou true && true === true.  
+
+	resultado = bool1 && bool2 && bool3
+	console.log("b. ", resultado) // imprime false, resultado de true && false && true === false.
+
+	resultado = !resultado && (bool1||bool2)   
+	console.log("c. ", resultado) // imprime false, negado de resultado = false. false && true === false
+	console.log("d. ", typeof resultado) //imprime boolean
+
+
+2- 
+	let primeiroNumero = prompt("Digite um número!")
+	let segundoNumero = prompt("Digite outro número!") 
+
+	const soma = primeiroNumero + segundoNumero
+	console.log(soma) // não vai imprimir o resultado pois as variáveis 	primeiroNumero e segundoNumero estão recebendo os valores no formato de 	string. Necessário conversão para tipo "Number" (number())
+
+--------------------------------------------------------------------------------------
+Exercícios de escrita de código
+
+1- 	let idadeUsuario = prompt("Qual a sua idade?") 
+   	let idadeMelhorAmigo = prompt("Qual a idade do seu/sua melhor amigo(a)?")
+	let maisVelho = idadeUsuario > idadeMelhorAmigo
+	let idade1 = Number(idadeUsuario)	
+	let idade2 = Number(idadeMelhorAmigo)
+	let diferencaIdade = idade1 - idade2	
+
+	console.log("Sua idade é maior do que a do seu melhor amigo?", maisVelho)
+	console.log("A diferença de idade entre vocês é de: ", diferencaIdade)
+
+
+2- 	let stringPar = prompt("Insira um número par!")
+	let numPar = Number(stringPar)
+	let divisor = 2
+	
+	console.log(numPar % divisor) 
+	//o resto da divisão de um número par por 2 sempre apresentará 0. 
+	//o resto da divisão de um número ímpar por 2 sempre apresentará 1.
+
+	
+3- 	let idadeUsuario = prompt("Qual a sua idade?")
+	let idadeNum = Number(idadeUsuario)
+	let idadeMeses = idadeNum * 12
+	let idadeDias = idadeNum * 365
+	let idadeHoras = idadeNum * 8760
+
+	console.log("A sua idade em meses é: ", idadeMeses)
+	console.log("A sua idade em dias é: ", idadeDias)
+	console.log("A sua idade em horas é: ", idadeHoras)
+
+
+4- 	let primeiroNum = prompt("Digite um número!")
+	let segundoNum = prompt("Digite outro número!")
+	
+	let op1 = primeiroNum > segundoNum
+	let op2 = primeiroNum === segundoNum
+	let op3 = primeiroNum % segundoNum
+	let op4 = segundoNum % primeiroNum
+	let divisivelPrimeiro = op3 === 0
+	let divisivelSegundo = op4 === 0
+
+	console.log("O primeiro numero é maior que segundo? ", op1)
+	console.log("O primeiro numero é igual ao segundo? ", op2)
+	console.log("O primeiro numero é divisível pelo segundo? ", divisivelPrimeiro)
+	console.log("O segundo numero é divisível pelo primeiro? ", divisivelSegundo)
+
+	
